@@ -1,2 +1,0 @@
-/usr/bin/ar qc libModelCheckingInputParser.a CMakeFiles/ModelCheckingInputParser.dir/MCIP.c.o CMakeFiles/ModelCheckingInputParser.dir/VariablesParser/variablesReader.c.o CMakeFiles/ModelCheckingInputParser.dir/FileReaderUtils/fileReaderUtils.c.o CMakeFiles/ModelCheckingInputParser.dir/FormulaParser/FormulaParser.c.o CMakeFiles/ModelCheckingInputParser.dir/FileReaderUtils/typeFinder.c.o CMakeFiles/ModelCheckingInputParser.dir/commonUtils.c.o
-/usr/bin/ranlib libModelCheckingInputParser.a
