@@ -3,6 +3,10 @@
 
 #include "stdio.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 enum NodeType {
     VAR, EQUALS, AND, OR, IMPLIES, NOT, EX, AX, EG, AG, EU, AU, EF, AF
 };
@@ -25,5 +29,9 @@ struct InputInfo {
 };
 
 struct InputInfo* readInput(FILE* fp);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif //MODELCHECKINGINPUTPARSER_MCIP_H
