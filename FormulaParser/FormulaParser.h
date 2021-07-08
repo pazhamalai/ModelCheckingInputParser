@@ -8,6 +8,6 @@
 #include "stdio.h"
 #include "../MCIP.h"
 
-struct Node* readFormula(FILE *fp, char** variables, int numberOfVariables, int allowNextState);
+struct Formula* readFormula(FILE *fp, char** variables, int numberOfVariables, int allowNextState);
 
 #endif //MODELCHECKINGINPUTPARSER_FORMULAPARSER_H

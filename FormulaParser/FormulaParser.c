@@ -28,7 +28,7 @@ int streq(char* word1, char* word2) {
 }
 
 
-struct Node* readFormula(FILE *fp, char** variables, int numberOfVariables, int allowNextState) {
+struct Formula* readFormula(FILE *fp, char** variables, int numberOfVariables, int allowNextState) {
 
     // End Recursion, if EOF
     int c;
@@ -39,7 +39,7 @@ struct Node* readFormula(FILE *fp, char** variables, int numberOfVariables, int 
     ungetc(c, fp);
 
 
-    struct Node* node = (struct Node*) malloc(sizeof(struct Node*));
+    struct Formula* node = (struct Formula*) malloc(sizeof(struct Formula*));
     skipSpaces(fp, &c);
 
     // First character should be '('.
