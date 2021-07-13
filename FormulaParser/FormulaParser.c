@@ -61,11 +61,14 @@ struct Formula* readFormula(FILE *fp, char** variables, int numberOfVariables, i
         node->type = getOperatorType(word);
         node->variableValue = -1;
 
-        node->firstArgument = readFormula(fp, variables, numberOfVariables, allowNextState);
-        node->secondArgument = NULL;
+        if(node->type != BOOLEAN_TRUE && node->type != BOOLEAN_FALSE) {
 
-        if(!isUnaryOperator(node->type)) {
-            node->secondArgument = readFormula(fp, variables, numberOfVariables, allowNextState);
+            node->firstArgument = readFormula(fp, variables, numberOfVariables, allowNextState);
+            node->secondArgument = NULL;
+
+            if (!isUnaryOperator(node->type)) {
+                node->secondArgument = readFormula(fp, variables, numberOfVariables, allowNextState);
+            }
         }
     }
 

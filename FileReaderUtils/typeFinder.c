@@ -18,6 +18,8 @@ char eu[] = "EU";
 char au[] = "AU";
 char ef[] = "EF";
 char af[] = "AF";
+char true[] = "TRUE";
+char false[] = "FALSE";
 
 // Returns the index of the word in variables
 // If not, -1
@@ -107,6 +109,12 @@ enum NodeType getOperatorType(char *word) {
 
     if(streq(word, af))
         return AF;
+
+    if(streq(word, true))
+        return BOOLEAN_TRUE;
+
+    if(streq(word, false))
+        return BOOLEAN_FALSE;
 
     printf("%s\n", word);
     raiseError("word not an operator");
