@@ -18,6 +18,8 @@ char eu[] = "EU";
 char au[] = "AU";
 char ef[] = "EF";
 char af[] = "AF";
+char er[] = "ER";
+char ar[] = "AR";
 char true[] = "TRUE";
 char false[] = "FALSE";
 
@@ -109,6 +111,12 @@ enum NodeType getOperatorType(char *word) {
 
     if(streq(word, af))
         return AF;
+
+    if(streq(word, er))
+        return ER;
+
+    if(streq(word, ar))
+        return AR;
 
     if(streq(word, true))
         return BOOLEAN_TRUE;
