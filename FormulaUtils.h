@@ -7,6 +7,14 @@
 
 #include "MCIP.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 struct Formula* Formula_Not(struct Formula* formula);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif //MODELCHECKINGINPUTPARSER_FORMULAUTILS_H
