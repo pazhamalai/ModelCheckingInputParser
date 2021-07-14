@@ -13,6 +13,8 @@ extern "C" {
 
 struct Formula* Formula_Not(struct Formula* formula);
 
+struct Formula* Formula_And(struct Formula* firstArgument, struct Formula* secondArgument);
+
 #ifdef __cplusplus
 }
 #endif
