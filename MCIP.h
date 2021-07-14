@@ -3,6 +3,7 @@
 
 #include "stdio.h"
 
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -19,13 +20,14 @@ struct Formula {
     int variableValue;
 };
 
-
 struct InputInfo {
     char **variables;
     struct Formula* transitionFormula;
     struct Formula* initialStatesFormula;
     struct Formula* ctlFormula;
+    struct Formula** fairnessConstraints;
     int numberOfVariables;
+    int numberOfFairnessConstraints;
 };
 
 struct InputInfo* readInput(FILE* fp);
