@@ -15,6 +15,8 @@ struct Formula* Formula_Not(struct Formula* formula);
 
 struct Formula* Formula_And(struct Formula* firstArgument, struct Formula* secondArgument);
 
+struct Formula* Formula_True();
+
 #ifdef __cplusplus
 }
 #endif

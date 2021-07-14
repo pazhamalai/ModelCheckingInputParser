@@ -22,3 +22,12 @@ struct Formula* Formula_And(struct Formula* firstArgument, struct Formula* secon
     return andNode;
 }
 
+struct Formula* Formula_True() {
+    struct Formula* trueNode = (struct Formula*) malloc(sizeof(struct Formula));
+    trueNode->type = BOOLEAN_TRUE;
+    trueNode->firstArgument = NULL;
+    trueNode->secondArgument = NULL;
+    trueNode->variableValue = -1;
+    return trueNode;
+}
+
