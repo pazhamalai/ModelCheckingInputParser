@@ -17,6 +17,8 @@ struct Formula* Formula_And(struct Formula* firstArgument, struct Formula* secon
 
 struct Formula* Formula_True();
 
+struct Formula* Formula_EG(struct Formula* argument);
+
 #ifdef __cplusplus
 }
 #endif

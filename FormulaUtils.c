@@ -31,3 +31,12 @@ struct Formula* Formula_True() {
     return trueNode;
 }
 
+struct Formula* Formula_EG(struct Formula* argument) {
+    struct Formula* EGNode = (struct Formula*) malloc(sizeof(struct Formula));
+    EGNode->type = EG;
+    EGNode->firstArgument = argument;
+    EGNode->secondArgument = NULL;
+    EGNode->variableValue = -1;
+    return EGNode;
+}
+
