@@ -9,7 +9,7 @@ extern "C" {
 #endif
 
 enum NodeType {
-    VAR, EQUALS, AND, OR, IMPLIES, NOT, EX, AX, EG, AG, EU, AU, EF, AF, ER, AR, BOOLEAN_TRUE, BOOLEAN_FALSE
+    VAR, AND, OR, IMPLIES, NOT, EX, AX, EG, AG, EU, AU, EF, AF, ER, AR, BOOLEAN_TRUE, BOOLEAN_FALSE
 };
 
 struct Formula {

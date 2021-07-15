@@ -5,7 +5,6 @@
 #include "typeFinder.h"
 #include "../commonUtils.h"
 
-char equals[] = "=";
 char and[] = "and";
 char or[] = "or";
 char implies[] = "implies";
@@ -72,9 +71,6 @@ int isUnaryOperator(enum NodeType type) {
 enum NodeType getOperatorType(char *word) {
     // word may be one of the operators
     // Or, it may belong to variables
-
-    if(streq(word, equals))
-        return EQUALS;
 
     if(streq(word, and))
         return AND;
